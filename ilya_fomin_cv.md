@@ -1,4 +1,4 @@
-#### ILYA FOMIN
+### ILYA FOMIN
 (408) 239-3973; ilya@4min.org
 
 Over a decade of leadership experience in product management, software development, and IT operations, across a number of highly complex and innovative industries.
