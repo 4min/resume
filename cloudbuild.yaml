@@ -1,0 +1,52 @@
+steps:
+- name: 'gcr.io/cloud-builders/git'
+  entrypoint: '/bin/sh'
+  args: ['-c', 'mkdir -p build']
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/${_GITHUB_USER_NAME}/${_GITHUB_REPO_NAME}']
+  waitFor: ['-']
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/tajmone/pandoc-goodies']
+  waitFor: ['-']
+- name: 'dalibo/pandocker'
+  args: [
+    '-f', 'gfm',
+    'resume/${_FILENAME}.md', 
+    '--template=pandoc-goodies/templates/html5/github/GitHub.html5',
+    '--metadata', 'title=ilya_fomin_cv',
+    '-o', 'build/${_FILENAME}.html'
+    ]
+- name: 'madnight/docker-alpine-wkhtmltopdf'
+  args: ['--zoom', '${_PDF_ZOOM}', 'build/${_FILENAME}.html', 'build/${_FILENAME}.pdf']
+- name: 'socialengine/github-release'
+  args: [
+    'github-release', 'release', 
+    '--user', '${_GITHUB_USER_NAME}', 
+    '--repo', '${_GITHUB_REPO_NAME}',
+    '--tag', 'v${_VERSION_NAME}-${SHORT_SHA}',  
+    '--name', 'v${_VERSION_NAME}-${SHORT_SHA}',
+    '--description', '"Autmated build for ${COMMIT_SHA}"', '--pre-release'
+    ]
+  secretEnv: ['GITHUB_TOKEN']
+- name: 'socialengine/github-release'
+  args: [
+    'github-release', 'upload', 
+    '--user', '${_GITHUB_USER_NAME}', 
+    '--repo', '${_GITHUB_REPO_NAME}', 
+    '--tag', 'v${_VERSION_NAME}-${SHORT_SHA}',
+    '--name', '${_FILENAME}.pdf',
+    '--file', 'build/${_FILENAME}.pdf'
+    ]
+  secretEnv: ['GITHUB_TOKEN']
+
+substitutions:
+    _GITHUB_USER_NAME: 4min
+    _GITHUB_REPO_NAME: resume
+    _FILENAME: ilya_fomin_cv
+    _PDF_ZOOM: "0.87"
+    _VERSION_NAME: "2018-10-30"
+
+secrets:
+- kmsKeyName: projects/playground-220400/locations/global/keyRings/public-builder-keyring/cryptoKeys/4min-resume-builder
+  secretEnv:
+    GITHUB_TOKEN: "CiQAWaC9m1oE/aI6iUPWm4aOpKAvfrA7t1ehM3/l+HhT5q4z/n0SUgCGczqLZZlrdph38TVW0X0htFvjDd37y1RHdQahXLbwdnDHxuMXc+t8+AL3SJP5pzOsiqA6LB9o4aw5yVwG0iuZIDWQtwS1LvmQ1yY9vWRN7vA="
