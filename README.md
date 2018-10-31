@@ -19,14 +19,14 @@ This project consists of 2 parts:
 - Configuration for [Google Cloud Build](https://cloud.google.com/cloud-build/) service to render the .md file into a good-looking PDF and upload back to GitHub as a release attachment
 
 Here's what you need to do:
-1) Fork this repo
-2) Replace ilya_fomin_cv.md with your own Markdown resume file
-3) Create a github developer token as [described here](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) with rights to read and write specific resume respository. I recommend using a separate "-machine" account, just to make sure you don't compromize your personal one.
-4) Create a GCP account for the automated build. If you want to share the build publically - create a GCP project.
-5) Ensure KMS is enabled and works as [described here](https://cloud.google.com/kms/docs/quickstart)
-6) Encrypt the GitHub token from step (3) [using Google's KMS](https://cloud.google.com/cloud-build/docs/securing-builds/use-encrypted-secrets-credentials)
-7) Update cloudbuild.yaml according to your changes:
-  * 'substitutions' section according to your repo and file name, and zoom value to
-  * 'secrets' section with your KMS key and the encrypted token string 
-8) Install and configure [GitHub GCP integration](https://github.com/marketplace/google-cloud-build)
-9) Make any change in your repo and confirm that automated builds triggers, and a new release gets created
+1. Fork this repo
+2. Replace ilya_fomin_cv.md with your own Markdown resume file
+3. Create a github developer token as [described here](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) with rights to read and write specific resume respository. I recommend using a separate "-machine" account, just to make sure you don't compromize your personal one.
+4. Create a GCP account for the automated build. If you want to share the build publically - create a GCP project.
+5. Ensure KMS is enabled and works as [described here](https://cloud.google.com/kms/docs/quickstart)
+6. Encrypt the GitHub token from step (3) [using Google's KMS](https://cloud.google.com/cloud-build/docs/securing-builds/use-encrypted-secrets-credentials)
+7. Update cloudbuild.yaml according to your changes:
+  7.1. 'substitutions' section according to your repo and file name, and zoom value to
+  7.2. 'secrets' section with your KMS key and the encrypted token string 
+8. Install and configure [GitHub GCP integration](https://github.com/marketplace/google-cloud-build)
+9. Make any change in your repo and confirm that automated builds triggers, and a new release gets created
