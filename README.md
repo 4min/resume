@@ -8,7 +8,7 @@ I'm accepting pull requests and other collaboration opportunities.
 
 ## PDF version
 
-PDF version is available for download on the releases tab: https://github.com/4min/resume/releases
+PDF version is available for download on [the releases tab](https://github.com/4min/resume/releases)
 
 # Create your own automated resume
 
@@ -26,7 +26,7 @@ Here's what you need to do:
 5. Ensure KMS is enabled and works as [described here](https://cloud.google.com/kms/docs/quickstart)
 6. Encrypt the GitHub token from step (3) [using Google's KMS](https://cloud.google.com/cloud-build/docs/securing-builds/use-encrypted-secrets-credentials)
 7. Update cloudbuild.yaml according to your changes:
-  7.1. 'substitutions' section according to your repo and file name, and zoom value to
-  7.2. 'secrets' section with your KMS key and the encrypted token string 
-8. Install and configure [GitHub GCP integration](https://github.com/marketplace/google-cloud-build)
-9. Make any change in your repo and confirm that automated builds triggers, and a new release gets created
+   - 'substitutions' section according to your repo and file name, and zoom value to make the printout look nice
+   - 'secrets' section with your KMS key and the encrypted token string
+1. Install and configure [GitHub GCP integration](https://github.com/marketplace/google-cloud-build)
+2. Make any change in your repo and confirm that automated builds triggers, and a new release gets created
