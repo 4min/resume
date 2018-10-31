@@ -38,7 +38,7 @@ steps:
   entrypoint: '/bin/sh'
   args: [
     '-c',
-    "GITHUB_TOKEN=$$(echo $$GITHUB_TOKEN | tr -d ' ') &&  github-release upload --tag $$(date '+%F')-${SHORT_SHA} --name ${_FILENAME}.pdf --file build/${_FILENAME}.pdf"
+    "github-release upload --tag $$(date '+%F')-${SHORT_SHA} --name ${_FILENAME}.pdf --file build/${_FILENAME}.pdf"
     ]
   env:
     - 'GITHUB_USER=${_GITHUB_USER_NAME}'
