@@ -52,6 +52,6 @@ substitutions:
     _PDF_ZOOM: "0.87"
 
 secrets:
-- kmsKeyName: projects/playground-220400/locations/global/keyRings/public-builder-keyring/cryptoKeys/4min-resume-builder
+- kmsKeyName: projects/github-4min-resume/locations/global/keyRings/4min-resume-keyring/cryptoKeys/builder-key
   secretEnv:
-    GITHUB_TOKEN: "CiQAWaC9mw8fHPESIrLWvnmgjpLu2U1SJhyxkKnStOxTxhRB3CISUgCGczqLgxbmlEMpZo8e9aivUQfLhr8nNkAospH75zbtpc6qrQ17yHqDKxjqyDBFDVcyFiuUMLfkXF+KK7pi9OzmEKTySlnVwVQHDArilhp8iDg="
+    GITHUB_TOKEN: "CiQAIEtpy8gAoOQ5gf4m02jFruwvXoqiofOuWb+oPQYL6w3NW00SUQCNlKBxMfWf4xK1ksASuUfqPMOwTI3+MITP0TN61+iHiolZO1V8NkXrv3ptQZspv0juutMx90iEpJH4UGQf8EHEv+iLv/Lw/tclDUiysrhnDw=="
