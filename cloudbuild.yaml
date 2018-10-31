@@ -2,41 +2,47 @@ steps:
 - name: 'gcr.io/cloud-builders/git'
   entrypoint: '/bin/sh'
   args: ['-c', 'mkdir -p build']
+
 - name: 'gcr.io/cloud-builders/git'
   args: ['clone', 'https://github.com/${_GITHUB_USER_NAME}/${_GITHUB_REPO_NAME}']
   waitFor: ['-']
+
 - name: 'gcr.io/cloud-builders/git'
   args: ['clone', 'https://github.com/tajmone/pandoc-goodies']
   waitFor: ['-']
+
 - name: 'dalibo/pandocker'
   args: [
     '-f', 'gfm',
     'resume/${_FILENAME}.md', 
     '--template=pandoc-goodies/templates/html5/github/GitHub.html5',
-    '--metadata', 'title=ilya_fomin_cv',
+    '--metadata', 'title=',
     '-o', 'build/${_FILENAME}.html'
     ]
+
 - name: 'madnight/docker-alpine-wkhtmltopdf'
   args: ['--zoom', '${_PDF_ZOOM}', 'build/${_FILENAME}.html', 'build/${_FILENAME}.pdf']
+
 - name: 'socialengine/github-release'
+  entrypoint: '/bin/sh'
   args: [
-    'github-release', 'release', 
-    '--user', '${_GITHUB_USER_NAME}', 
-    '--repo', '${_GITHUB_REPO_NAME}',
-    '--tag', 'v${_VERSION_NAME}-${SHORT_SHA}',  
-    '--name', 'v${_VERSION_NAME}-${SHORT_SHA}',
-    '--description', '"Autmated build for ${COMMIT_SHA}"', '--pre-release'
-    ]
+    '-c',
+    "github-release release --pre-release --tag $$(date '+%F')-${SHORT_SHA} --name $$(date '+%F')-${SHORT_SHA} --description 'Autmated build for ${SHORT_SHA}'"
+  ]
   secretEnv: ['GITHUB_TOKEN']
+  env:
+    - 'GITHUB_USER=${_GITHUB_USER_NAME}'
+    - 'GITHUB_REPO=${_GITHUB_REPO_NAME}'
+
 - name: 'socialengine/github-release'
+  entrypoint: '/bin/sh'
   args: [
-    'github-release', 'upload', 
-    '--user', '${_GITHUB_USER_NAME}', 
-    '--repo', '${_GITHUB_REPO_NAME}', 
-    '--tag', 'v${_VERSION_NAME}-${SHORT_SHA}',
-    '--name', '${_FILENAME}.pdf',
-    '--file', 'build/${_FILENAME}.pdf'
+    '-c',
+    "GITHUB_TOKEN=$$(echo $$GITHUB_TOKEN | tr -d ' ') &&  github-release upload --tag $$(date '+%F')-${SHORT_SHA} --name ${_FILENAME}.pdf --file build/${_FILENAME}.pdf"
     ]
+  env:
+    - 'GITHUB_USER=${_GITHUB_USER_NAME}'
+    - 'GITHUB_REPO=${_GITHUB_REPO_NAME}'
   secretEnv: ['GITHUB_TOKEN']
 
 substitutions:
@@ -44,9 +50,8 @@ substitutions:
     _GITHUB_REPO_NAME: resume
     _FILENAME: ilya_fomin_cv
     _PDF_ZOOM: "0.87"
-    _VERSION_NAME: "2018-10-30"
 
 secrets:
 - kmsKeyName: projects/playground-220400/locations/global/keyRings/public-builder-keyring/cryptoKeys/4min-resume-builder
   secretEnv:
-    GITHUB_TOKEN: "CiQAWaC9m1oE/aI6iUPWm4aOpKAvfrA7t1ehM3/l+HhT5q4z/n0SUgCGczqLZZlrdph38TVW0X0htFvjDd37y1RHdQahXLbwdnDHxuMXc+t8+AL3SJP5pzOsiqA6LB9o4aw5yVwG0iuZIDWQtwS1LvmQ1yY9vWRN7vA="
+    GITHUB_TOKEN: "CiQAWaC9mw8fHPESIrLWvnmgjpLu2U1SJhyxkKnStOxTxhRB3CISUgCGczqLgxbmlEMpZo8e9aivUQfLhr8nNkAospH75zbtpc6qrQ17yHqDKxjqyDBFDVcyFiuUMLfkXF+KK7pi9OzmEKTySlnVwVQHDArilhp8iDg="
