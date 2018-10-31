@@ -27,7 +27,7 @@ steps:
   entrypoint: '/bin/sh'
   args: [
     '-c',
-    "github-release release --pre-release --tag $$(date '+%F')-${SHORT_SHA} --name $$(date '+%F')-${SHORT_SHA} --description 'Autmated build for ${SHORT_SHA}'"
+    "github-release release --pre-release --tag $$(date '+%F')-${SHORT_SHA} --name $$(date '+%F')-${SHORT_SHA} --description 'This is an automated build for ${SHORT_SHA}'"
   ]
   secretEnv: ['GITHUB_TOKEN']
   env:
