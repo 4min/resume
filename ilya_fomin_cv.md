@@ -5,16 +5,16 @@ Over a decade of leadership experience in product management, software developme
 
 #### EMPLOYMENT
 
-02/2019 – present **Engineering Manager @ YouTube (San Bruno, CA)**
+02/2019 – present **Engineering Manager @ Google (San Bruno, CA)**
 
-  Leading Live Chat: world's busiest chat room product
-  + Led complete system rewrite from Python into C++ (260K LOC) while continuing to serve 1M+ QPS of user traffic
+  Leading Interactivity engineering at YouTube Live: world's largest live streaming platform.
+  + Led complete Live Chat system rewrite from Python to C++ (260K LOC) while it continued to serve 1M+ QPS of user traffic
   + Supported the team through explosive growth during COVID-19 crises; expanded the team to 15 SWE
   + Navigated cross-functional and cross-team collaborations to land SuperStickers, Pinned Chat, Live Polls, Stadia CrowdChoice, Live Donations, Live Merch, Members-only Live, Premiere Afterparty, and many internal quality and growth launches
 
 03/2017 – present **Co-founder and CTO @ Oscillations (Oakland, CA)**
 
-  Executive leadership for next-generation mind-controlled and immersive content development at the intersection of fine art, neuroscience, and technology
+  Executive leadership for next-generation mind-controlled and immersive content development at the intersection of fine art, neuroscience, and technology.
   + Management of technology partnerships and product proposals
   + Software development of VR video workflow tools, collaboration instruments, and VRE prototypes
   + "Neurorealities" SDK architecture and prototype implementation
@@ -31,7 +31,7 @@ Over a decade of leadership experience in product management, software developme
 
 03/2013 – 06/2017 **Sr. Manager, Reliability Platform @ Align Technology, Inc. (San Jose, CA)**
 
-  Managed operations and automation for 50+ development, test and production environments, comprised of 1K+ physical and virtual (VMware/AWS) servers, supporting 300+ developers in 30+ SWE and SQA teams
+  Managed operations and automation for 50+ development, test and production environments, comprised of 1K+ physical and virtual (VMware/AWS) servers, supporting 300+ developers in 30+ SWE and SQA teams.
   + Formed a global technical team of 15 engineers, spanning 3 sites; established Scrum-of-Scrums and Kanban-based collaboration processes using Atlassian tools
   + Led successful effort to roll out Chef-based configuration management and deployment automation for IT and RnD organizations across 3 diverse application stacks, 4 globally distributed offices
   + Coordinated development and maintenance of Chef-based cookbooks and related tools for 100+ applications. Automated all custom software deployments and installation of most 3rd-party systems
@@ -42,7 +42,7 @@ Over a decade of leadership experience in product management, software developme
 
 02/2007 – 03/2013 **Manager, SQA Automation @ Align Technology, Inc. (Moscow)**
 
-  Shaped test automation practice from the ground up, tooling selection to implementation to hiring and management. Lead environments management and deployment automation, cut production cutover time by an order of magnitude
+  Shaped test automation practice from the ground up, tooling selection to implementation to hiring and management. Lead environments management and deployment automation, cut production cutover time by an order of magnitude.
   + Formed a team of 8 engineers, set up Scrum and Kanban processes for collaboration
   + Architected and lead the implementation of a distributed cluster system for launching QTP/Selenium test batches with easy to use Web interface (QTP, VBS, Java, GWT, gwt-ext, ext-js), as well as underlying test scripts
   + Led implementation and rollout of configuration management/deployment framework and scripts to support a team of 100+. Supported dozens of deployments a day, cut production cutover time from 1 day to 1 hour
