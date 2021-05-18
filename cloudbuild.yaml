@@ -49,7 +49,7 @@ substitutions:
     _GITHUB_USER_NAME: 4min
     _GITHUB_REPO_NAME: resume
     _FILENAME: ilya_fomin_cv
-    _PDF_ZOOM: "0.83"
+    _PDF_ZOOM: "0.86"
     
 availableSecrets:
   secretManager:
