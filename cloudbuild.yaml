@@ -54,4 +54,4 @@ substitutions:
 secrets:
 - kmsKeyName: projects/github-4min-resume/locations/global/keyRings/4min-resume-keyring/cryptoKeys/builder-key
   secretEnv:
-    GITHUB_TOKEN: "CiQAIEtpy8gAoOQ5gf4m02jFruwvXoqiofOuWb+oPQYL6w3NW00SUQCNlKBxMfWf4xK1ksASuUfqPMOwTI3+MITP0TN61+iHiolZO1V8NkXrv3ptQZspv0juutMx90iEpJH4UGQf8EHEv+iLv/Lw/tclDUiysrhnDw=="
+    GITHUB_TOKEN: "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"
