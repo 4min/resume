@@ -48,6 +48,3 @@ substitutions:
     _GITHUB_REPO_NAME: resume
     _FILENAME: ilya_fomin_cv
     _PDF_ZOOM: "0.83"
-
-secrets:
-- kmsKeyName: projects/github-4min-resume/locations/global/keyRings/4min-resume-keyring/cryptoKeys/builder-key
