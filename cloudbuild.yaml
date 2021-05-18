@@ -29,7 +29,6 @@ steps:
     '-c',
     "github-release release --pre-release --tag $$(date '+%F')-${SHORT_SHA} --name $$(date '+%F')-${SHORT_SHA} --description 'This is an automated build for ${SHORT_SHA}'"
   ]
-  secretEnv: ['GITHUB_TOKEN']
   env:
     - 'GITHUB_USER=${_GITHUB_USER_NAME}'
     - 'GITHUB_REPO=${_GITHUB_REPO_NAME}'
@@ -43,7 +42,6 @@ steps:
   env:
     - 'GITHUB_USER=${_GITHUB_USER_NAME}'
     - 'GITHUB_REPO=${_GITHUB_REPO_NAME}'
-  secretEnv: ['GITHUB_TOKEN']
 
 substitutions:
     _GITHUB_USER_NAME: 4min
@@ -53,5 +51,3 @@ substitutions:
 
 secrets:
 - kmsKeyName: projects/github-4min-resume/locations/global/keyRings/4min-resume-keyring/cryptoKeys/builder-key
-  secretEnv:
-    GITHUB_TOKEN: "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"
