@@ -21,7 +21,7 @@ steps:
     ]
 
 - name: 'madnight/docker-alpine-wkhtmltopdf'
-  args: ['--zoom', '${_PDF_ZOOM}', '--page-size Letter','build/${_FILENAME}.html', 'build/${_FILENAME}.pdf']
+  args: ['--zoom', '${_PDF_ZOOM}', '--page-size', 'Letter', 'build/${_FILENAME}.html', 'build/${_FILENAME}.pdf']
 
 - name: 'finalgene/github-release'
   entrypoint: '/bin/sh'
