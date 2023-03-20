@@ -53,5 +53,5 @@ substitutions:
     
 availableSecrets:
   secretManager:
-  - versionName: projects/$PROJECT_NUMBER/secrets/github-token/versions/1
+  - versionName: projects/$PROJECT_NUMBER/secrets/github-token/versions/2
     env: 'GITHUB_TOKEN'
