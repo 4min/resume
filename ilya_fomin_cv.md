@@ -59,10 +59,9 @@ Over a decade of leadership experience in product management, software developme
 + **2010 – 2017:** Over 15 tech talks (delivered myself and coached/supported team members)
 + **2016 – 2017:** Organizer/Host @ SF Bay Area Rancher User Group meetup
 + **2013 – 2014:** Technical translation team (Russian) @ How Google Tests Software book
-+ **2011 – 2013:** [Head of] Committee @ SQA Days (600+ attendees, the largest testing conference in CIS at the time)
++ **2011 – 2013:** [Head of] Committee @ SQA Days (600+ attendees, largest testing conference in CIS)
 
 #### EDUCATION
-  + 2023: LEAD certificate @ Stanford GSB
-  + 2021: Executive Leadership Development @ Stanford GSB
-  + 2020: Stanford Business Leadership Series @ Stanford GSB
-  + 2009: MSCS @ Moscow State University
++ **2022 – 2024:** LEAD Certificate @ Stanford GSB
++ **2020 – 2021:** SBLS, ELD Courses @ Stanford GSB
++ **2004 – 2009:** MSCS @ Moscow State University
