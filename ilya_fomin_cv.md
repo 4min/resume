@@ -32,8 +32,6 @@ Over a decade of leadership experience in product management, software developme
   + Managed a distributed team of 10 comprised of local, remote and outsourced engineers, designers and project managers
   + Supported 15x growth in customer traffic
 
-\newpage
-
 03/2013 – 06/2017 **Sr. Manager, Reliability Platform @ Align Technology, Inc. (San Jose, CA)**
 
   Managed operations and automation for 50+ development, test and production environments, comprised of 1K+ physical and virtual (VMware/AWS) servers, supporting 300+ developers in 30+ SWE and SQA teams.
