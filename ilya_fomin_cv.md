@@ -5,14 +5,16 @@ Over a decade of leadership experience in product management, software developme
 
 #### EMPLOYMENT
 
-02/2019 – present **Engineering Manager @ Google (San Bruno, CA)**
+02/2019 – present **Engineering Lead @ Google (San Bruno, CA)**
 
-  Leading Interactivity engineering at YouTube Live: world's largest live streaming platform.
+  Leading Interactivity engineering at YouTube Live: world's largest live streaming platform
   + Led complete Live Chat system rewrite from Python to C++ (260K LOC) while it continued to serve 1M+ QPS of user traffic
-  + Supported the team through explosive growth during COVID-19 crises; expanded the team to 15 SWE
-  + Navigated cross-functional and cross-team collaborations to land SuperStickers, Pinned Chat, Live Polls, Stadia CrowdChoice, Live Donations, Live Merch, Members-only Live, Premiere Afterparty, and many internal quality and growth launches
+  + Established and led cross-org collaborations with YouTube Trust and Safety and Community teams to defeat 2 major spam campaigns and decrease Live Chat badness by over 80%
+  + Founded and led Live Platformization effort to enable and improve vertical teams' capability to make live streaming part of multi-format portfolio 
+  + Grew the Live Interactivity team from 6 to 20+ SWEs organized in 2 independent sub-teams; supported the team through explosive growth during COVID-19 crises
+  + Navigated cross-functional and cross-team collaborations to land SuperStickers, Pinned Chat, Live Polls, Stadia CrowdChoice, Live Donations, Live Merch, Members-only Live, Premiere Afterparty, Live Q&A, Immersive Live experience, and many internal quality and growth launches
 
-03/2017 – present **Co-founder and CTO @ Oscillations (Oakland, CA)**
+03/2017 – 03/2020 **Co-founder and CTO @ Oscillations (Oakland, CA)**
 
   Executive leadership for next-generation mind-controlled and immersive content development at the intersection of fine art, neuroscience, and technology.
   + Management of technology partnerships and product proposals
@@ -59,6 +61,7 @@ Over a decade of leadership experience in product management, software developme
 + **2011 – 2013:** [Head of] Committee @ SQA Days (600+ attendees, the largest testing conference in CIS at the time)
 
 #### EDUCATION
+  + 2023: LEAD certificate @ Stanford GSB
   + 2021: Executive Leadership Development @ Stanford GSB
   + 2020: Stanford Business Leadership Series @ Stanford GSB
   + 2009: MSCS @ Moscow State University
