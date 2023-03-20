@@ -56,10 +56,10 @@ Over a decade of leadership experience in product management, software developme
   + Developed test automation scripts, contributed to test automation tooling (C++)
 
 #### COMMUNITY_ACTIVITIES
-+ **2010 – 2017:** Over 15 tech talks (delivered myself and coached/supported team members)
++ **2010 – 2019:** Over 15 tech talks (delivered myself and coached/supported team members)
 + **2016 – 2017:** Organizer/Host @ SF Bay Area Rancher User Group meetup
 + **2013 – 2014:** Technical translation team (Russian) @ How Google Tests Software book
-+ **2011 – 2013:** [Head of] Committee @ SQA Days (600+ attendees, largest CIS testing conference)
++ **2011 – 2013:** [Head of] Committee @ SQA Days (600+ attendees, largest CIS testing summit)
 
 #### EDUCATION
 + **2022 – 2024:** LEAD Certificate @ Stanford GSB
