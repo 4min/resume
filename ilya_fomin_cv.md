@@ -1,5 +1,5 @@
 ### ILYA FOMIN
-(408) 239-3973; fom@fom.info; [linkedin.com/in/fominfo](https://linkedin.com/in/fominfo)
+fomin@fom.info / (408) 239-3973 / [linkedin.com/in/fominfo](https://linkedin.com/in/fominfo)
 
 Over a decade of leadership experience in product management, software development, and IT operations, across a number of highly complex and innovative industries.
 
