@@ -23,7 +23,7 @@ steps:
 - name: 'madnight/docker-alpine-wkhtmltopdf'
   args: ['--zoom', '${_PDF_ZOOM}', 'build/${_FILENAME}.html', 'build/${_FILENAME}.pdf']
 
-- name: 'socialengine/github-release'
+- name: 'finalgene/github-release'
   entrypoint: '/bin/sh'
   args: [
     '-c',
@@ -34,7 +34,7 @@ steps:
     - 'GITHUB_USER=${_GITHUB_USER_NAME}'
     - 'GITHUB_REPO=${_GITHUB_REPO_NAME}'
 
-- name: 'socialengine/github-release'
+- name: 'finalgene/github-release'
   entrypoint: '/bin/sh'
   args: [
     '-c',
