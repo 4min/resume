@@ -7,10 +7,11 @@ Over a decade of leadership experience in product management, software developme
 
 02/2019 – present **Engineering Lead @ Google (San Bruno, CA)**
 
-  Leading Interactivity engineering at YouTube Live: world's largest live streaming platform
-  + Led complete Live Chat system rewrite from Python to C++ (260K LOC) while it continued to serve 1M+ QPS of user traffic
+  Leading Core Infrastructure and Interactivity engineering at YouTube Live: world's largest live streaming platform
+  + Founded and shaped Live Core infrastructure organization responsible for key aspects of live streaming experience, including discovery infrastructure and signals, interactivity and creation tools, innovative ML-driven experiences, and running Classic live business
+  + Led complete Live Chat system rewrite from Python to C++ (260K LOC) while it continued to serve 2M+ QPS of user traffic
   + Founded and led Live Platformization effort to enable and improve vertical teams' capability to make live streaming part of multi-format portfolio
-  + Co-led strategic collaborations with YouTube Shopping to launch Live Shopping, and with YouTube TV to launch NFL Sunday Ticket interactive watch experience
+  + Co-led strategic collaborations with YouTube Shopping to launch Live Shopping, with YouTube TV to launch NFL Sunday Ticket interactive watch experience, and with multiple Fan Funding teams to support 4x revenue growth to $XXXM
   + Established and led cross-org collaborations with YouTube Trust and Safety and Community teams to defeat 2 major spam campaigns and decrease Live Chat badness by over 80%
   + Grew the Live Interactivity team from 6 to 20+ SWEs organized in 2 independent sub-teams; supported the team through explosive growth during COVID-19 crises
   + Navigated cross-functional and cross-team collaborations to land SuperStickers, Pinned Chat, Live Polls, Stadia CrowdChoice, Live Donations, Live Merch, Members-only Live, Premiere Afterparty, Live Q&A, Immersive Live experience, and many internal quality and growth launches
