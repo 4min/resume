@@ -38,7 +38,7 @@ steps:
   entrypoint: '/bin/sh'
   args: [
     '-c',
-    "maniator/gh release upload $$(date '+%F')-${SHORT_SHA} build/${_FILENAME}.pdf"
+    "gh release upload $$(date '+%F')-${SHORT_SHA} build/${_FILENAME}.pdf"
     ]
   env:
     - 'GITHUB_USER=${_GITHUB_USER_NAME}'
