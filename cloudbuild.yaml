@@ -27,7 +27,7 @@ steps:
   entrypoint: '/bin/sh'
   args: [
     '-c',
-    "gh release create $$(date '+%F')-${SHORT_SHA} --title $$(date '+%F')-${SHORT_SHA} --notes 'This is an automated build for ${SHORT_SHA}'"
+    "gh release create $$(date '+%F')-${SHORT_SHA} --prerelease --title $$(date '+%F')-${SHORT_SHA} --notes 'This is an automated build for ${SHORT_SHA}'"
     ]
   env:
     - 'GITHUB_USER=${_GITHUB_USER_NAME}'
@@ -45,11 +45,22 @@ steps:
     - 'GITHUB_REPO=${_GITHUB_REPO_NAME}'
   secretEnv: ['GITHUB_TOKEN']
 
+- name: 'maniator/gh'
+  entrypoint: '/bin/sh'
+  args: [
+    '-c',
+    "gh release update $$(date '+%F')-${SHORT_SHA}"
+    ]
+  env:
+    - 'GITHUB_USER=${_GITHUB_USER_NAME}'
+    - 'GITHUB_REPO=${_GITHUB_REPO_NAME}'
+  secretEnv: ['GITHUB_TOKEN']
+
 substitutions:
     _GITHUB_USER_NAME: 4min
     _GITHUB_REPO_NAME: resume
     _FILENAME: ilya_fomin_cv
-    _PDF_ZOOM: "1.10"
+    _PDF_ZOOM: "1.095"
     
 availableSecrets:
   secretManager:
