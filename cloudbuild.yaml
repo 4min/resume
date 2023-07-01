@@ -21,7 +21,7 @@ steps:
     ]
 
 - name: 'madnight/docker-alpine-wkhtmltopdf'
-  args: ['--zoom', '${_PDF_ZOOM}', '--page-size', 'Legal', 'build/${_FILENAME}.html', 'build/${_FILENAME}.pdf']
+  args: ['--zoom', '${_PDF_ZOOM}', '--margin-right' "15mm", '--page-size', 'Legal', 'build/${_FILENAME}.html', 'build/${_FILENAME}.pdf']
 
 - name: 'maniator/gh'
   entrypoint: '/bin/sh'
@@ -49,7 +49,7 @@ steps:
   entrypoint: '/bin/sh'
   args: [
     '-c',
-    "gh release edit $$(date '+%F')-${SHORT_SHA}"
+    "gh release edit $$(date '+%F')-${SHORT_SHA} --prerelease"
     ]
   env:
     - 'GITHUB_USER=${_GITHUB_USER_NAME}'
