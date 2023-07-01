@@ -49,7 +49,7 @@ steps:
   entrypoint: '/bin/sh'
   args: [
     '-c',
-    "gh release update $$(date '+%F')-${SHORT_SHA}"
+    "gh release edit $$(date '+%F')-${SHORT_SHA}"
     ]
   env:
     - 'GITHUB_USER=${_GITHUB_USER_NAME}'
@@ -60,7 +60,7 @@ substitutions:
     _GITHUB_USER_NAME: 4min
     _GITHUB_REPO_NAME: resume
     _FILENAME: ilya_fomin_cv
-    _PDF_ZOOM: "1.095"
+    _PDF_ZOOM: "1.09"
     
 availableSecrets:
   secretManager:
