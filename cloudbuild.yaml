@@ -27,7 +27,7 @@ steps:
   entrypoint: '/bin/sh'
   args: [
     '-c',
-    "gh release create $$(date '+%F')-${SHORT_SHA} --title $$(date '+%F')-${SHORT_SHA} --prerelease --notes <string> 'This is an automated build for ${SHORT_SHA}'"
+    "gh release create $$(date '+%F')-${SHORT_SHA} --title $$(date '+%F')-${SHORT_SHA} --prerelease --notes 'This is an automated build for ${SHORT_SHA}'"
     ]
   env:
     - 'GITHUB_USER=${_GITHUB_USER_NAME}'
