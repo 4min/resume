@@ -23,16 +23,16 @@ steps:
 - name: 'madnight/docker-alpine-wkhtmltopdf'
   args: ['--zoom', '${_PDF_ZOOM}', '--page-size', 'Legal', 'build/${_FILENAME}.html', 'build/${_FILENAME}.pdf']
 
-- name: 'finalgene/github-release'
+- name: 'maniator/gh'
   entrypoint: '/bin/sh'
   args: [
     '-c',
-    "github-release release --pre-release --tag $$(date '+%F')-${SHORT_SHA} --name $$(date '+%F')-${SHORT_SHA} --description 'This is an automated build for ${SHORT_SHA}'"
-  ]
-  secretEnv: ['GITHUB_TOKEN']
+    "gh release create $$(date '+%F')-${SHORT_SHA} --title $$(date '+%F')-${SHORT_SHA} --prerelease --notes <string> 'This is an automated build for ${SHORT_SHA}'"
+    ]
   env:
     - 'GITHUB_USER=${_GITHUB_USER_NAME}'
     - 'GITHUB_REPO=${_GITHUB_REPO_NAME}'
+  secretEnv: ['GITHUB_TOKEN']
 
 - name: 'maniator/gh'
   entrypoint: '/bin/sh'
@@ -45,11 +45,22 @@ steps:
     - 'GITHUB_REPO=${_GITHUB_REPO_NAME}'
   secretEnv: ['GITHUB_TOKEN']
 
+- name: 'maniator/gh'
+  entrypoint: '/bin/sh'
+  args: [
+    '-c',
+    "gh release edit $$(date '+%F')-${SHORT_SHA} --latest"
+    ]
+  env:
+    - 'GITHUB_USER=${_GITHUB_USER_NAME}'
+    - 'GITHUB_REPO=${_GITHUB_REPO_NAME}'
+  secretEnv: ['GITHUB_TOKEN']
+
 substitutions:
     _GITHUB_USER_NAME: 4min
     _GITHUB_REPO_NAME: resume
     _FILENAME: ilya_fomin_cv
-    _PDF_ZOOM: "1.13"
+    _PDF_ZOOM: "1.12"
     
 availableSecrets:
   secretManager:
