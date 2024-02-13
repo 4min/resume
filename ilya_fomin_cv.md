@@ -1,19 +1,24 @@
 ### ILYA FOMIN
 fomin@fom.info / (408) 239-3973 / [linkedin.com/in/fominfo](https://linkedin.com/in/fominfo)
 
-Over a decade of leadership experience in product management, software development, and IT operations, across a number of highly complex and innovative industries.
+Passionate and product-forward engineering leader with over 15 years of management experience across a diverse set of domains and industries.
 
 #### EMPLOYMENT
 
-02/2019 – present **Engineering Lead @ Google (San Bruno, CA)**
+03/2023 – present **Engineering Lead @ YouTube / Google (San Bruno, CA)**
 
-  Leading Core Infrastructure and Interactivity engineering at YouTube Live: world's largest live streaming platform
-  + Founded and shaped Live Core infrastructure organization responsible for key aspects of live streaming experience, including discovery infrastructure and signals, interactivity and creation tools, innovative ML-driven experiences, and running Classic live business
+  Leading YouTube Live Classic product engineering organization: world's largest live streaming platform
+  + Established Live Classic engineering organization responsible for overall success of Live product and business.
+  + Scaled management of 3 teams (Foundation, Experience, Monetization) responsible for key areas of Live product including discovery infrastructure; creator, viewer, and community experiences; and both traditional and alternative monetization.
+  + Founded and co-led Live Signals program to transition Live discovery system to near-real time, decreasing engagement signal latency by over 90%.
+  + Led Live Platformization effort to enable and improve vertical teams' capability to make live streaming part of multi-format portfolio.
+
+02/2019 – 03/2023 **Engineering Manager @ YouTube / Google (San Bruno, CA)**
+  Established and led YouTube Live Interactivity engineering team as part of YouTube Live organization.
   + Led complete Live Chat system rewrite from Python to C++ (260K LOC) while it continued to serve 2M+ QPS of user traffic
-  + Founded and led Live Platformization effort to enable and improve vertical teams' capability to make live streaming part of multi-format portfolio
-  + Co-led strategic collaborations with YouTube Shopping to launch Live Shopping, with YouTube TV to launch NFL Sunday Ticket interactive watch experience, and with multiple Fan Funding teams to support 4x revenue growth to $XXXM
+  + Co-led strategic collaborations with YouTube Shopping organization to launch Live Shopping; with YouTube TV to launch NFL Sunday Ticket interactive watch experience; and with multiple Fan Funding teams to support 4x revenue growth to $XXXM
   + Established and led cross-org collaborations with YouTube Trust and Safety and Community teams to defeat 2 major spam campaigns and decrease Live Chat badness by over 80%
-  + Grew the Live Interactivity team from 6 to 20+ SWEs organized in 2 independent sub-teams; supported the team through explosive growth during COVID-19 crises
+  + Grew the Live Interactivity team from 6 to 19 SWEs organized in 2 independent sub-teams; supported the team through explosive growth during COVID-19 crises
   + Navigated cross-functional and cross-team collaborations to land SuperStickers, Pinned Chat, Live Polls, Stadia CrowdChoice, Live Donations, Live Merch, Members-only Live, Premiere Afterparty, Live Q&A, Immersive Live experience, and many internal quality and growth launches
 
 03/2017 – 03/2020 **Co-founder and CTO @ Oscillations (Oakland, CA)**
