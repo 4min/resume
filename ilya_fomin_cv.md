@@ -7,13 +7,14 @@ Passionate and product-forward engineering leader with over 15 years of manageme
 
 03/2023 – present **Engineering Lead @ YouTube / Google (San Bruno, CA)**
 
-  Leading YouTube Live Classic product engineering organization: world's largest live streaming platform
+  Leading YouTube Live Classic product engineering organization: world's largest live streaming platform.
   + Established Live Classic engineering organization (25 SWE) responsible for overall success of Live product and business.
   + Scaled management of 3 teams (Foundation, Experience, Monetization) responsible for key areas of Live product including discovery infrastructure; creator, viewer, and community experiences; and both traditional and alternative monetization.
   + Founded and co-led Live Signals program to transition Live discovery system to near-real time, decreasing engagement signal latency by over 10x.
   + Led Live Platformization effort to enable and improve vertical teams' capability to make live streaming part of multi-format portfolio.
 
 02/2019 – 03/2023 **Engineering Manager @ YouTube / Google (San Bruno, CA)**
+  
   Established and led YouTube Live Interactivity engineering team as part of YouTube Live organization.
   + Led complete Live Chat system rewrite from Python to C++ (260K LOC) while serving 2M+ QPS of user traffic uninterrupted.
   + Co-led strategic collaborations with YouTube Shopping organization to launch Live Shopping; with YouTube TV to launch NFL Sunday Ticket interactive watch experience; and with multiple Fan Funding teams to support 4x revenue growth to $XXXM.
