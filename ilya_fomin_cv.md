@@ -12,13 +12,14 @@ Passionate and product-forward engineering leader with over 15 years of manageme
   + Scaled management of 3 teams (Foundation, Experience, Monetization) responsible for key areas of Live product including discovery infrastructure; creator, viewer, and community experiences; and both traditional and alternative monetization.
   + Founded and co-led Live Signals program to transition Live discovery system to near-real time, decreasing engagement signal latency by over 10x.
   + Led Live Platformization effort to enable and improve vertical teams' capability to make live streaming part of multi-format portfolio.
+  + Defined YouTube Live LLM strategy and led multiple Gemini-based features to launch, covering generative and content classification use cases.
 
 02/2019 – 03/2023 **Engineering Manager @ YouTube / Google (San Bruno, CA)**
   
   Established and led YouTube Live Interactivity engineering team as part of YouTube Live organization.
   + Led complete Live Chat system rewrite from Python to C++ (260K LOC) while serving 2M+ QPS of user traffic uninterrupted.
   + Co-led strategic collaborations with YouTube Shopping organization to launch Live Shopping; with YouTube TV to launch NFL Sunday Ticket interactive watch experience; and with multiple Fan Funding teams to support 4x revenue growth to $XXXM.
-  + Established and led cross-org collaborations with YouTube Trust and Safety and Community teams to defeat 2 major (and many minor) spam campaigns and decrease Live Chat badness by over 80%.
+  + Established and led cross-org collaborations with YouTube Trust and Safety and Community teams to defeat multiple major spam campaigns using a combination of ML classifiers and in-product features. Decreased Chat badness by over 80%.
   + Grew the Live Interactivity team from 6 to 19 SWEs organized in 2 independent sub-teams; supported the team through explosive growth during COVID-19 crisis.
   + Navigated cross-functional and cross-team collaborations to land SuperStickers, Pinned Chat, Live Polls, Stadia CrowdChoice, Live Donations, Live Merch, Members-only Live, Premiere Afterparty, Live Q&A, Immersive Live experience, and many internal quality and growth launches.
 
