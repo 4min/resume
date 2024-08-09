@@ -1,7 +1,7 @@
 ### ILYA FOMIN
 fomin@fom.info / (408) 239-3973 / [linkedin.com/in/fominfo](https://linkedin.com/in/fominfo)
 
-Passionate and product-forward engineering leader with over 15 years of management experience across a diverse set of domains and industries.
+Business-forward engineering leader with over 15 years of management experience across a diverse set of domains and industries.
 
 #### EMPLOYMENT
 
@@ -9,9 +9,10 @@ Passionate and product-forward engineering leader with over 15 years of manageme
 
   Leading YouTube Live Classic product engineering organization: world's largest live streaming platform.
   + Established Live Classic engineering organization (25 SWE) responsible for overall success of Live product and business.
+  + Set product and technical strategy for Classic Live and drove execution to support strong XX% YoY growth for the largest Live streaming platform in the world.
   + Scaled management of 3 teams (Foundation, Experience, Monetization) responsible for key areas of Live product including discovery infrastructure; creator, viewer, and community experiences; and both traditional and alternative monetization.
   + Founded and co-led Live Signals program to transition Live discovery system to near-real time, decreasing engagement signal latency by over 10x.
-  + Led Live Platformization effort to enable and improve vertical teams' capability to make live streaming part of multi-format portfolio.
+  + Led Live Platformization effort to enable and improve vertical teams' capability to make live streaming part of YouTube's multi-format portfolio.
   + Defined YouTube Live LLM strategy and led multiple Gemini-based features to launch, covering generative and content classification use cases.
 
 02/2019 – 03/2023 **Engineering Manager @ YouTube / Google (San Bruno, CA)**
